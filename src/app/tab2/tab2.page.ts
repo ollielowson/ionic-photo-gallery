@@ -7,7 +7,7 @@ import {PhotoService} from '../services/photo.service';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page implements OnInit {
-  private photoService: PhotoService;
+  public photoService: PhotoService;
 
   constructor(injector: Injector) {
     this.photoService = injector.get(PhotoService);
