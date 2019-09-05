@@ -3,7 +3,7 @@ import {IonicModule} from '@ionic/angular';
 
 import {Tab2Page} from './tab2.page';
 import {Camera} from "@ionic-native/camera/ngx";
-import {Storage} from '@ionic/storage';
+import {IonicStorageModule, Storage} from '@ionic/storage';
 
 describe('Tab2Page', () => {
     let component: Tab2Page;
@@ -12,11 +12,13 @@ describe('Tab2Page', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             providers: [
-                Camera,
-                Storage
+                Camera
             ],
             declarations: [Tab2Page],
-            imports: [IonicModule.forRoot()]
+            imports: [
+                IonicModule.forRoot(),
+                IonicStorageModule.forRoot()
+            ]
         }).compileComponents();
 
         fixture = TestBed.createComponent(Tab2Page);

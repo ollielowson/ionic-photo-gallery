@@ -1,19 +1,21 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { PhotoService } from './photo.service';
+import {PhotoService} from './photo.service';
 import {Camera} from "@ionic-native/camera/ngx";
-import {Storage} from '@ionic/storage';
+import {IonicStorageModule, Storage} from '@ionic/storage';
 
 describe('PhotoService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    providers: [
-        Camera,
-        Storage
-    ]
-  }));
+    beforeEach(() => TestBed.configureTestingModule({
+        providers: [
+            Camera
+        ],
+        imports: [
+            IonicStorageModule.forRoot()
+        ]
+    }));
 
-  it('should be created', () => {
-    const service: PhotoService = TestBed.get(PhotoService);
-    expect(service).toBeTruthy();
-  });
+    it('should be created', () => {
+        const service: PhotoService = TestBed.get(PhotoService);
+        expect(service).toBeTruthy();
+    });
 });
