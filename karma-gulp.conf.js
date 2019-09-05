@@ -4,6 +4,12 @@ module.exports = function(config) {
     config.set({
         basePath: '',
         frameworks: ['jasmine'],
+        preprocessors: {
+            './src/test.ts': ['webpack']
+        },
+        plugins: [
+            require('karma-webpack')
+        ],
         reporters: ['progress', 'junit'],
         port: 9876,
         colors: true,
