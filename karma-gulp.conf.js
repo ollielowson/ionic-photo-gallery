@@ -2,7 +2,7 @@ module.exports = function (config) {
     config.set({
         reporters: ['progress', 'junit'],
         browsers: ['Chrome'],
-        frameworks: ['PhantomJS'],
+        frameworks: ['jasmine'],
         junitReporter: {
             outputDir: '_results'
         },
