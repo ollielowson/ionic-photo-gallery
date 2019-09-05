@@ -61,7 +61,7 @@
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~2.0.1",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-typescript": "^2.9.0",
     "karma": "^0.13.0",
     "karma-phantomjs-launcher": "~0.1",
