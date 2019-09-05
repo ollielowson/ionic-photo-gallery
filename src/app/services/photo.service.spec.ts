@@ -1,12 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 
 import { PhotoService } from './photo.service';
-import {Camera} from "@ionic-native/camera";
+import {Camera} from "@ionic-native/camera/ngx";
+import {Storage} from '@ionic/storage';
 
 describe('PhotoService', () => {
   beforeEach(() => TestBed.configureTestingModule({
     providers: [
-        Camera
+        Camera,
+        Storage
     ]
   }));
 
