@@ -4,13 +4,6 @@ module.exports = function(config) {
     config.set({
         basePath: '',
         frameworks: ['jasmine'],
-        files: [
-            'specs/*.js'
-        ],
-        exclude: [
-        ],
-        preprocessors: {
-        },
         reporters: ['progress', 'junit'],
         port: 9876,
         colors: true,
